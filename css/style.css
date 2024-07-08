@@ -1,0 +1,65 @@
+body{
+    background-color:#d3cfc8;
+    font-family: "Oranienbaum", serif;
+}
+
+header{
+    background-color:#baaca0;
+    padding: 3%;
+}
+
+.logo{
+    background-color: #c2e8f6;
+}
+
+nav{
+    background-color:#bdd6b9;
+}
+
+main{
+    background-color:#f8bdd5;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section{
+    background-color: #d0b3d1;
+}
+
+.titulos{
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2em;
+    line-height: 3;
+}
+
+h2{
+    font-size: 1.5em;
+    line-height: 3;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+footer{
+    background-color: #343c5b;
+    padding: 3%;
+}
+
+.cabecalho{
+    padding: 3%;
+}
+
+.rodape{
+    padding: 3%;
+}
