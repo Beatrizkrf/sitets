@@ -1,12 +1,63 @@
 body{
     background-color:#d3cfc8;
-    background-image: url('../img/background_image/eras.png');
+    background-image: url('../img/background_image/eras\ roxo\ acizentado\ claro.png');
     font-family: "Oranienbaum", serif;
 }
 
 header{
     background-color:#baaca0;
     padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;   
+    background-color: #efe7ffcb;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+nav ul{
+    /*background-color:#bdd6b9;*/
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #6c6774;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
 }
 
 .logotipo{
@@ -14,19 +65,62 @@ header{
     margin-left: 0%;
 }
 
-nav{
-    background-color:#bdd6b9;
+@media screen and (max-width: 800px) {
+    .card {
+        width: calc(50% - 20px); /* 2 cards por linha em telas médias */
+    }
+    .col-6{
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        padding-right: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(65, 105, 225, 0.8 );
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+        padding: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+    }
+
+    nav ul li label {
+        /* width: 100%; */
+        display: block;
+    }
 }
 
 main{
-    background-color: #d0b3d1;
+    background-color: #e4e0f7d3;
     width: 90%;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
 }
 
+
+
 section{
-    background-color: #d0b3d1;
+    background-color: #e4e0f769;
 }
 
 .titulos{
@@ -36,7 +130,7 @@ section{
 }
 
 h1{
-    font-size: 4em;
+    font-size: 3em;
     line-height: 3;
 }
 
@@ -67,8 +161,26 @@ p{
     margin-right: auto;
     display: block;
 }
+
+.direita{
+    float:right;
+    width: 15%;
+    margin-left: 2%;
+    margin-right: 8%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+}
+
+.esquerda{
+    float: left;
+    width: 15%;
+    margin-top: 1%;
+    margin-right: 3%;
+    margin-left: 10%;
+}
 footer{
-    background-color: #343c5b;
+    margin-top: 4%;
+    background-color:#efe7ffcb;
     font-size: 1.0em;
 }
 
@@ -76,6 +188,49 @@ footer{
     padding: 3%;
 }
 
+.playlist{
+    width: 75%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.9;
+}
+
 .rodape{
     padding: 2.5%;
 }
+/*************************************************************************************************************/
+/*CURIOSIDADES*/
+h3{
+    font-size: 1.2em;
+    line-height: 3;
+    margin-top: 2%; 
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+.musica{
+    width: 40%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.8;
+}
+
+.imggato{
+    width: 27%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto ;
+    margin-right: auto;
+    display: block;
+}
+
+/*<section>
+            <h3></h3>
+            <p></p>
+        </section>*/
